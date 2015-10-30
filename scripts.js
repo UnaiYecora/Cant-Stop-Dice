@@ -33,7 +33,7 @@ var res3a = d1+d4;
 var res3b = d2+d3;
 
 //Dices
-document.write('<h2>Dices: ' + numberToImg(d1) + ' ' + numberToImg(d2) + ' ' + numberToImg(d3) + ' ' + numberToImg(d4) + '</h2>');
+document.write('<h2 id="roll">' + numberToImg(d1) + ' ' + numberToImg(d2) + ' ' + numberToImg(d3) + ' ' + numberToImg(d4) + '</h2>');
 
 //Combinations
 document.write('<h2>')
