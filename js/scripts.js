@@ -43,16 +43,16 @@ document.write('<h2 id="roll">' + numberToImg(d1) + ' ' + numberToImg(d2) + ' ' 
 //Combinations
 
 //First combination
-document.write( '<div class="combination"><h2 class="combinationDice">' + numberToImg(d1) + ' ' + numberToImg(d2) + ' <span>/</span> ' + numberToImg(d3) + ' ' + numberToImg(d4) + '</h2>');
+document.write( '<div class="combination c1"><h2 class="combinationDice">' + numberToImg(d1) + ' ' + numberToImg(d2) + ' <span>/</span> ' + numberToImg(d3) + ' ' + numberToImg(d4) + '</h2>');
 document.write('<p>You can move on: <br>');
 document.write('<strong>' + res1a + ' </strong>and<strong> ' + res1b + '</strong></p></div>');
 
 //Second combination
-document.write( '<div class="combination"><h2 class="combinationDice">' + numberToImg(d1) + ' ' + numberToImg(d3) + ' <span>/</span> ' + numberToImg(d2) + ' ' + numberToImg(d4) + '</h2>');
+document.write( '<div class="combination c2"><h2 class="combinationDice">' + numberToImg(d1) + ' ' + numberToImg(d3) + ' <span>/</span> ' + numberToImg(d2) + ' ' + numberToImg(d4) + '</h2>');
 document.write('<p>You can move on: <br>');
 document.write('<strong>' + res2a + ' </strong>and<strong> ' + res2b + '</strong></p></div>');
 
 //Third combination
-document.write( '<div class="combination"><h2 class="combinationDice">' + numberToImg(d1) + ' ' + numberToImg(d4) + ' <span>/</span> ' + numberToImg(d2) + ' ' + numberToImg(d3) + '</h2>');
+document.write( '<div class="combination c3"><h2 class="combinationDice">' + numberToImg(d1) + ' ' + numberToImg(d4) + ' <span>/</span> ' + numberToImg(d2) + ' ' + numberToImg(d3) + '</h2>');
 document.write('<p>You can move on: <br>');
 document.write('<strong>' + res3a + ' </strong>and<strong> ' + res3b + '</strong></p></div>');
