@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.unaiyecora.cantstopdice" version="0.4">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.unaiyecora.cantstopdice" version="0.5">
   <name><![CDATA[Can't Stop Dice]]></name>
   <description>Dice roller to play Can't Stop board game.</description>
   <author href="http://unaiyecora.com" email="unaiyecora@gmail.com">Unai Yécora</author>
@@ -8,5 +8,5 @@
   <preference name="target-device" value="universal"/>
   <preference name="fullscreen" value="true"/>
   <preference name="webviewbounce" value="true"/>
-  <icon src="icon.png"/>
+  <icon src="img/icon.png"/>
 </widget>
