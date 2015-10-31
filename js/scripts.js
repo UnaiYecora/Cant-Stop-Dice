@@ -53,6 +53,6 @@ document.write('<p>You can move on: <br>');
 document.write('<strong>' + res2a + ' </strong>and<strong> ' + res2b + '</strong></p></div>');
 
 //Third combination
-document.write( '<div class="combination"><h2 class="combinationDice">' + numberToImg(d1) + ' ' + numberToImg(d4) + ' <span>/</span> ' + numberToImg(d2) + ' ' + numberToImg(d3) + '</h2>');
+document.write( '<div class="combination c3"><h2 class="combinationDice">' + numberToImg(d1) + ' ' + numberToImg(d4) + ' <span>/</span> ' + numberToImg(d2) + ' ' + numberToImg(d3) + '</h2>');
 document.write('<p>You can move on: <br>');
 document.write('<strong>' + res3a + ' </strong>and<strong> ' + res3b + '</strong></p></div>');
