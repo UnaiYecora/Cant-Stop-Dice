@@ -8,38 +8,72 @@ body {
     height: 100%;
 }
 
-.container{
-  margin: 25px;
-}
-
-.card {
-  max-width: 500px;
+.container {
+  text-align: center;
+  max-width: 480px;
   padding: 15px;
-  margin: 2% auto;
+  margin: 0 auto;
   background-color: #fff;
   border-radius: 7px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.16), 0 2px 6px rgba(0,0,0,0.23);
+  position: absolute;
+  left: 3%;
+  top: 65px;
+  right: 3%;
+  min-height: 87%;
 }
 
 #title {
-    text-align: center;
-    color: #333;
+    color: #FFF;
     margin-bottom: 5px;
+    text-align: center;
+    font-size: 3.2em;
+    margin: 19px;
 }
 
 #roll {
-  text-align: center;
-  font-size: 3em;
-  margin: 5px;
+  font-size: 4em;
+  margin: 0px;
   color: #2A8BCC;
   font-weight: 400;
   text-shadow: 2px 2px 4px #BDBDBD;
 }
 
-button {
+.combination{
+  border-radius: 14px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 20px;
+  border-bottom: 1px solid #ECECEC;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+}
+.combination p{
+  font-size: 1em;
+  margin: 5px 0;
+  color: #868686;
+  font-style: italic;
+}
+.combination p strong {
+    font-size: 1.5em;
+    color: #2196F3;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.combinationDice{
+  margin: 0;
+  font-size: 2.5em;
+  color: #4E4E4E;
+}
+.combinationDice span{
+  color: #CECECE;
+  font-weight: 400;
+}
+
+.nbutton {
   position: relative;
   vertical-align: top;
-  width: 100%;
+  width: 94%;
   height: 60px;
   padding: 0;
   font-size: 22px;
@@ -52,16 +86,74 @@ button {
   cursor: pointer;
   -webkit-box-shadow: inset 0 -2px #2a8bcc;
   box-shadow: inset 0 -2px #2a8bcc;
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  right: 3%;
 }
-button:active {
-  top: 1px;
+.nbutton:active {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
+.button-wrap{
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  right: 3%;
+}
 
+button {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  width: 94%;
+}
 
+button:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+button {
+	background: #3498db;
+	color: #fff;
+	box-shadow: 0 6px #237AB5;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+button {
+	border-radius: 0 0 5px 5px;
+}
+
+button:hover {
+	box-shadow: 0 4px #237AB5;
+	top: 2px;
+}
+
+button:active {
+	box-shadow: 0 0 #237AB5;
+	top: 6px;
+}
 
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -112,39 +204,6 @@ summary {
   display: block;
 }
 
-/**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
- */
-
-[hidden],
-template {
-  display: none;
-}
-
 /* Links
    ========================================================================== */
 
@@ -169,28 +228,12 @@ a:hover {
    ========================================================================== */
 
 /**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
- */
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
 
 b,
 strong {
   font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari and Chrome.
- */
-
-dfn {
-  font-style: italic;
 }
 
 /**
@@ -201,43 +244,6 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
 }
 
 /* Embedded content
@@ -257,47 +263,6 @@ img {
 
 svg:not(:root) {
   overflow: hidden;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * Address margin not present in IE 8/9 and Safari.
- */
-
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-/**
- * Contain overflow in all browsers.
- */
-
-pre {
-  overflow: auto;
-}
-
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- */
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
 }
 
 /* Forms
@@ -437,55 +402,9 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 /**
- * Define consistent border, margin, and padding.
- */
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-
-legend {
-  border: 0; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
 
 textarea {
   overflow: auto;
-}
-
-/**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
- */
-
-optgroup {
-  font-weight: bold;
-}
-
-/* Tables
-   ========================================================================== */
-
-/**
- * Remove most spacing between table cells.
- */
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
 }
