@@ -1,5 +1,5 @@
 body {
-    background-color: #2196F3;
+    background-color: #26A69A;
     position: absolute;
     left: 0;
     right: 0;
@@ -35,7 +35,7 @@ body {
   font-size: 3.5em;
   line-height: 1.2em;
   margin: 0px;
-  color: #6FAFDA;
+  color: #26A69A;
   font-weight: 400;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 .combination p strong {
     font-size: 1.5em;
-    color: #2196F3;
+    color: #FC9003;
     font-style: normal;
     vertical-align: middle;
 }
@@ -79,56 +79,69 @@ body {
   right: 3%;
 }
 
-button {
-	border: none;
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
-	background: none;
-	cursor: pointer;
-	padding: 25px 80px;
-	display: inline-block;
-	margin: 15px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 700;
-	outline: none;
-	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-  width: 94%;
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), 0 3px 3px rgba(0, 0, 0, 0.15), 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  outline: none;
+  width: 80%;
+  text-shadow: 0 -0.5px 1px rgba(0, 0, 0, 0.15);
 }
 
-button:after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-button {
-	background: #3498db;
-	color: #fff;
-	box-shadow: 0 6px #237AB5;
-	-webkit-transition: none;
-	-moz-transition: none;
-	transition: none;
-}
-button {
-	border-radius: 0 0 5px 5px;
+.button {
+  padding: 1.5em 3em;
+  margin: 0;
+  position: relative;
+  min-width: 250px;
+  display: inline-block;
 }
 
-button:hover {
-	box-shadow: 0 4px #237AB5;
-	top: 2px;
+.button.styl-material {
+  -webkit-transition: 200ms background cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 200ms background cubic-bezier(0.4, 0, 0.2, 1);
+  background: #E91E63;
 }
 
-button:active {
-	box-shadow: 0 0 #237AB5;
-	top: 6px;
+.button.styl-material:hover,
+.button.styl-material:focus {
+  outline: none;
+  background: #EC407A;
 }
+
+.ripple-obj {
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  fill: #AD1457;
+}
+
+.ripple-obj use {
+  opacity: 0;
+}
+
+.button.styl-material {
+  background: #009688;
+}
+
+.button.styl-material:hover,
+.button.styl-material:focus {
+  background: #26A69A;
+}
+
+.ripple-obj {
+  fill: #00695C;
+}
+
 
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
