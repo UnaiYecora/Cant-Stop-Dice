@@ -3,7 +3,6 @@
 / Dice Functionality
 /
 */
-
 function globalJS(){
 	//Get random numbers
 	function randomDice(){return Math.floor(Math.random() * 6 + 1 );}
