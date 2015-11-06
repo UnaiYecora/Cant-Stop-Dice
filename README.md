@@ -5,7 +5,7 @@ If you don't want to do the math (or you don't have dices at hand), this is for 
 
 Web version: http://unaiyecora.github.io/Cant-Stop-Dice/ (mirror: http://unaiyecora.com/sandbox/CantStopDice/)
 
-![Image](http://unaiyecora.com/sandbox/CantStopDice/example-img.png)
+![Image](http://unaiyecora.com/sandbox/CantStopDice/screenshot.png)
 
 You can find the last releases (and an untested Windows Phone app) here: https://build.phonegap.com/apps/1741190/
 
