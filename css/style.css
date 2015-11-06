@@ -20,7 +20,11 @@ body {
   left: 3%;
   top: 89px;
   right: 3%;
-  min-height: 80%;
+}
+
+#output {
+    margin-bottom: 50px;
+    overflow: auto;
 }
 
 #title {
