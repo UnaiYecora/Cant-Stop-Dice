@@ -3,6 +3,8 @@
 I just made this simple android dice roller for Can't Stop. It's just a little app that lets you roll four dices and it gives you the possible combinations.
 If you don't want to do the math (or you don't have dices at hand), this is for you.
 
+##### Now on the Play Store! [Download](https://play.google.com/store/apps/details?id=com.unaiyecora.cantstopdice).
+
 Web version: http://unaiyecora.github.io/Cant-Stop-Dice/ (mirror: http://unaiyecora.com/sandbox/CantStopDice/)
 
 ![Image](http://unaiyecora.com/sandbox/CantStopDice/screenshot.png)
