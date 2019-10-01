@@ -6,6 +6,7 @@
 
 body {
     background-color: #ADD2EB;
+    background-image: linear-gradient(45deg, hsla(204, 64%, 71%, 1) 0%, #ADD2EB 100%);
     min-height: 100%;
     display: flex;
     flex-direction: column;
