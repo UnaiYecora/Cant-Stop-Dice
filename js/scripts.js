@@ -54,19 +54,19 @@ function globalJS(){
 	//Combinations
 
 	//First combination
-	html += '<div class="combination"><h2 class="combinationDice">' + numberToImg(d1) + ' ' + numberToImg(d2) + ' <span>/</span> ' + numberToImg(d3) + ' ' + numberToImg(d4) + '</h2>';
-	html += '<p>You can move on: <br>';
-	html += '<strong>' + res1a + ' </strong>and<strong> ' + res1b + '</strong></p></div>';
+	html += '<div class="combination"><p>You can move on: </p>';
+	html += '<h2 class="combinationDice">' + res1a + ' <span>and</span> ' + res1b + '</h2>';
+	html += '<p><strong>' + numberToImg(d1) + ' ' + numberToImg(d2) + ' </strong>/<strong> ' + numberToImg(d3) + ' ' + numberToImg(d4) + '</strong></p></div>';
 
 	//Second combination
-	html += '<div class="combination"><h2 class="combinationDice">' + numberToImg(d1) + ' ' + numberToImg(d3) + ' <span>/</span> ' + numberToImg(d2) + ' ' + numberToImg(d4) + '</h2>';
-	html += '<p>You can move on: <br>';
-	html += '<strong>' + res2a + ' </strong>and<strong> ' + res2b + '</strong></p></div>';
+	html += '<div class="combination"><p>You can move on: </p>';
+	html += '<h2 class="combinationDice">' + res2a  + ' <span>and</span> ' + res2b + '</h2>';
+	html += '<p><strong>' + numberToImg(d1) + ' ' + numberToImg(d3) + ' </strong>/<strong> ' + numberToImg(d2) + ' ' + numberToImg(d4) + '</strong></p></div>';
 
 	//Third combination
-	html += '<div class="combination c3"><h2 class="combinationDice">' + numberToImg(d1) + ' ' + numberToImg(d4) + ' <span>/</span> ' + numberToImg(d2) + ' ' + numberToImg(d3) + '</h2>';
-	html += '<p>You can move on: <br>';
-	html += '<strong>' + res3a + ' </strong>and<strong> ' + res3b + '</strong></p></div>';
+	html += '<div class="combination"><p>You can move on: </p>';
+	html += '<h2 class="combinationDice">' + res3a + ' <span>and</span> ' + res3b + '</h2>';
+	html += '<p><strong>' + numberToImg(d1) + ' ' + numberToImg(d4) + ' </strong>/<strong> ' + numberToImg(d2) + ' ' + numberToImg(d3) + '</strong></p></div>';
 
 	return print(html);
 }
