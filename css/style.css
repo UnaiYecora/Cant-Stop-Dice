@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #26A69A;
+    background-color: #ADD2EB;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -15,16 +15,16 @@ body {
 	text-align: center;
 	max-width: 480px;
 	padding: 10px 15px;
-	margin: 0 auto 30px;
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 2px 6px rgba(0,0,0,0.16), 0 2px 6px rgba(0,0,0,0.23);
+	margin: 0 auto 50px;
+	background-color: #E9F7F9;
+	border-radius: 30px;
 	position: relative;
 	width: 92%;
+	box-shadow: 0 20px 40px rgba(26, 41, 51, 0.22);
 }
 
 #title {
-	color: #FFF;
+	color: #ffffff;
 	margin-bottom: 5px;
 	text-align: center;
 	font-size: 2.5em;
@@ -40,7 +40,7 @@ body {
   font-size: 3.5em;
   line-height: 1.2em;
   margin: 0px;
-  color: #26A69A;
+  color: #E35F75;
   font-weight: 400;
 }
 
@@ -50,16 +50,19 @@ body {
 	padding: 10px;
 	border-bottom: 1px solid #ECECEC;
 	box-shadow: 0 4px 14px -5px rgba(0, 0, 0, 0.14);
+	background-color: #ffffff;
+	max-width: 85%;
+	margin: 18px auto;
 }
 .combination p{
   font-size: 1em;
   margin: 5px 0;
-  color: #868686;
+  color: #2C365E;
   font-style: italic;
 }
 .combination p strong {
 	font-size: 2em;
-	color: #7d9896;
+	color: #2C365E;
 	font-style: normal;
 	vertical-align: middle;
 	font-weight: 200;
@@ -68,10 +71,10 @@ body {
 .combinationDice{
   margin: 0;
   font-size: 2.5em;
-  color: #FF9800;
+  color: #E35F75;
 }
 .combinationDice span{
-  color: #CECECE;
+  color: #2C365E;
   font-weight: 400;
 }
 
@@ -92,7 +95,7 @@ body {
   outline: none;
   width: 80%;
   text-shadow: 0 -0.5px 1px rgba(0, 0, 0, 0.15);
-  background: #26A69A;
+  background: #E35F75;
   padding: 1.5em 3em;
   margin: 0;
   position: relative;
@@ -104,14 +107,14 @@ body {
   border-radius: 100px;
 }
 .button:hover {
-  background: #009688;
+  background: #f76e84;
 }
 
 
 .circle {
   display: block;
   position: absolute;
-  background: rgba(0, 0, 0, 0.075);
+  background: #E35F75;
   border-radius: 50%;
   transform: scale(0);
 }
