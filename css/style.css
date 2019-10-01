@@ -49,11 +49,12 @@ body {
 }
 
 .combination{
-	border-radius: 14px;
-	margin: 10px;
-	padding: 10px;
-	border-bottom: 1px solid #ECECEC;
-	box-shadow: 0 4px 14px -5px rgba(0, 0, 0, 0.14);
+  border-radius: 14px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ECECEC;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
 }
 .combination p{
   font-size: 1em;
@@ -62,17 +63,16 @@ body {
   font-style: italic;
 }
 .combination p strong {
-	font-size: 2em;
-	color: #7d9896;
-	font-style: normal;
-	vertical-align: middle;
-	font-weight: 200;
+    font-size: 1.5em;
+    color: #FC9003;
+    font-style: normal;
+    vertical-align: middle;
 }
 
 .combinationDice{
   margin: 0;
   font-size: 2.5em;
-  color: #FF9800;
+  color: #4E4E4E;
 }
 .combinationDice span{
   color: #CECECE;
@@ -104,8 +104,7 @@ body {
   display: inline-block;
   overflow: hidden;
   -ms-touch-action: manipulation;	/* IE10  */
-  touch-action: manipulation;		/* IE11+ */
-  border-radius: 100px;
+	touch-action: manipulation;		/* IE11+ */
 }
 .button:hover {
   background: #009688;
