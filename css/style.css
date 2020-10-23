@@ -30,8 +30,9 @@ body {
 	color: #ffffff;
 	margin-bottom: 5px;
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 2.8em;
 	margin: 30px 10px 30px;
+	text-shadow: 5px 5px 0px rgb(177 72 89 / 35%);
 }
 
 #output {
