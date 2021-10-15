@@ -3,6 +3,10 @@
 / Dice Functionality
 /
 */
+
+var f = true;
+
+
 function globalJS() {
 	//Get random numbers
 	function randomDice() { return Math.floor(Math.random() * 6 + 1); }
@@ -32,6 +36,15 @@ function globalJS() {
 		var outputDiv = document.getElementById('output');
 		outputDiv.innerHTML = message;
 	}
+
+	//Add animation
+	if (!f) {
+		document.getElementById('container').classList.add("shake");
+		setTimeout(function(){
+			document.getElementById('container').classList.remove("shake");
+		}, 450);
+	}
+	f = false;
 
 	// Html output
 	var html = '';
@@ -87,4 +100,5 @@ function globalJS() {
 	html += '<p><strong>' + numberToImg(d1) + ' ' + numberToImg(d4) + ' </strong>/<strong> ' + numberToImg(d2) + ' ' + numberToImg(d3) + '</strong></p></div>';
 
 	return print(html);
+
 }
