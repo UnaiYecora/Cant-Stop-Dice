@@ -45,11 +45,13 @@ body {
 }
 
 #roll {
-  font-size: 4.3em;
-  line-height: 0.7em;
   margin: 0px;
-  color: #E35F75;
-  font-weight: 400;
+  display: flex;
+  padding: 10px 30px 5px;
+}
+
+svg {
+  height: auto;
 }
 
 .combination{
