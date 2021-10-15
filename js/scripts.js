@@ -37,15 +37,6 @@ function globalJS() {
 		outputDiv.innerHTML = message;
 	}
 
-	//Add animation
-	if (!f) {
-		document.getElementById('container').classList.add("shake");
-		setTimeout(function(){
-			document.getElementById('container').classList.remove("shake");
-		}, 450);
-	}
-	f = false;
-
 	// Html output
 	var html = '';
 
@@ -99,6 +90,46 @@ function globalJS() {
 	html += '<h2 class="combinationDice">' + res3a + ' <span>and</span> ' + res3b + '</h2>';
 	html += '<p><strong>' + numberToImg(d1) + ' ' + numberToImg(d4) + ' </strong>/<strong> ' + numberToImg(d2) + ' ' + numberToImg(d3) + '</strong></p></div>';
 
-	return print(html);
+	print(html);
+
+	//Add animation
+	if (!f) {
+		document.getElementById('container').classList.add("shake");
+		setTimeout(function(){
+			document.getElementById('container').classList.remove("shake");
+		}, 600);
+
+		let svgs = document.getElementById('roll').querySelectorAll("svg");
+		for (var i = 0; i < svgs.length; ++i) {
+			svgs[i].classList.add('shake2');
+			svgs[i].getElementsByTagName("g")[0].classList.add('cover');
+		}
+		setTimeout(function(){
+			for (var i = 0; i < svgs.length; ++i) {
+				svgs[i].classList.remove('shake2');
+			}
+		}, 850);
+		setTimeout(function(){
+			for (var i = 0; i < svgs.length; ++i) {
+				svgs[i].getElementsByTagName("g")[0].classList.remove('cover');
+			}
+		}, 650);
+
+		let combs = document.querySelectorAll(".combination");
+		for (var i = 0; i < combs.length; ++i) {
+			combs[i].classList.add('hidden', 'shake');
+		}
+		setTimeout(function(){
+			for (var i = 0; i < combs.length; ++i) {
+				combs[i].classList.remove('hidden');
+			}
+		}, 650);
+		setTimeout(function(){
+			for (var i = 0; i < combs.length; ++i) {
+				combs[i].classList.remove( 'shake');
+			}
+		}, 850);
+	}
+	f = false;
 
 }

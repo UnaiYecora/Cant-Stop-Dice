@@ -30,8 +30,14 @@ body {
 	box-shadow: 0 20px 40px rgba(26, 41, 51, 0.22);
 }
 
-.container.shake{
+.shake{
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+.shake2{
+  animation: shake2 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
@@ -59,6 +65,14 @@ body {
 
 svg {
   height: auto;
+}
+
+#roll svg g.cover{
+  fill: #e35f75;
+  background: #e35f75;
+  outline: solid 30px #e35f75;
+  border-radius: 100%;
+  outline-offset: -48px;
 }
 
 .combination{
@@ -93,6 +107,10 @@ svg {
 .combinationDice span{
   color: #2C365E;
   font-weight: 400;
+}
+
+.combination.hidden>*{
+  opacity: 0;
 }
 
 .button-wrap{
@@ -163,6 +181,24 @@ svg {
 
   40%, 60% {
     transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake2 {
+  10%, 90% {
+    transform: translate3d(5px, 0, 0) scale(1.1);
+  }
+  
+  20%, 80% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(-2px, 0, 0);
   }
 }
 
