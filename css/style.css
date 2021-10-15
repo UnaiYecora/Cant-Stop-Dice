@@ -36,7 +36,7 @@ body {
 	text-align: center;
 	font-size: 2.8em;
 	margin: 30px 10px 30px;
-	text-shadow: 5px 5px 0px rgb(177 72 89 / 35%);
+	text-shadow: 0.2rem 0.2rem 0px rgba(177, 72, 89, .35);
 }
 
 #output {
@@ -138,6 +138,38 @@ svg {
   100% {
     opacity: 0;
     transform: scale(2.5);
+  }
+}
+
+/* Media queries */
+@media (max-height:950px) {
+  .container {
+    margin-bottom: 10px;
+  }
+
+  h1#title {
+    font-size: 1.3rem;
+    margin: 12px 10px;
+  }
+
+  div#output {
+    margin-bottom: 10px;
+  }
+
+  button#button {
+    padding: 1em 3em;
+  }
+
+  svg {
+    height: 60px;
+  }
+
+  h2.combinationDice {
+    font-size: 2rem;
+  }
+
+  .combination p {
+    font-size: 0.8em;
   }
 }
 
