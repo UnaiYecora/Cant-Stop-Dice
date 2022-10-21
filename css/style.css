@@ -13,16 +13,16 @@ html[data-theme="light"]{
 }
 
 html[data-theme="dark"]{
-  --background-color: #3B4252;
-  --background-accent: #2E3440;
-  --card-background: #4C566A;
-  --title-color: #fff;
-  --title-shadow: rgba(177, 72, 89, .35);
+  --background-color: #2E3440;
+  --background-accent: #434C5E;
+  --card-background: #434C5E;
+  --title-color: #E9F7F9;
+  --title-shadow: #485e78;
   --text-color: #b1b7c3;
   --button-text-color: #2E3440;
-  --accent-color: #fff;
+  --accent-color: #E9F7F9;
   --accent-color-light: #D8DEE9;
-  --combination-background: #434C5E;
+  --combination-background: #4C566A;
 }
 
 *,
