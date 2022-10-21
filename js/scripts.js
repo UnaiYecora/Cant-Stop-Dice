@@ -133,3 +133,15 @@ function globalJS() {
 	f = false;
 
 }
+
+
+function changeTheme() {
+	var currentTheme = document.documentElement.getAttribute("data-theme");
+    var targetTheme = "light";
+
+    if (currentTheme === "light") {
+        targetTheme = "dark";
+    }
+
+    document.documentElement.setAttribute('data-theme', targetTheme);
+}
