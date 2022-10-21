@@ -135,6 +135,12 @@ function globalJS() {
 }
 
 
+var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+if (storedTheme){
+    document.documentElement.setAttribute('data-theme', storedTheme);
+}
+
+
 function changeTheme() {
 	var currentTheme = document.documentElement.getAttribute("data-theme");
     var targetTheme = "light";
@@ -144,4 +150,5 @@ function changeTheme() {
     }
 
     document.documentElement.setAttribute('data-theme', targetTheme);
+	localStorage.setItem('theme', targetTheme);
 }
