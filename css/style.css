@@ -1,4 +1,5 @@
-:root{
+:root,
+html[data-theme="light"]{
   --background-color: #add2eb;
   --background-accent: #98b0e8;
   --card-background: #E9F7F9;
@@ -9,6 +10,19 @@
   --accent-color: #e35f75;
   --accent-color-light: #f76e84;
   --combination-background: #fff;
+}
+
+html[data-theme="dark"]{
+  --background-color: #3B4252;
+  --background-accent: #2E3440;
+  --card-background: #4C566A;
+  --title-color: #fff;
+  --title-shadow: rgba(177, 72, 89, .35);
+  --text-color: #b1b7c3;
+  --button-text-color: #2E3440;
+  --accent-color: #fff;
+  --accent-color-light: #D8DEE9;
+  --combination-background: #434C5E;
 }
 
 *,
