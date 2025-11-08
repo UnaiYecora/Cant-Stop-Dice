@@ -159,7 +159,7 @@ function changeTheme() {
 	localStorage.setItem('theme', nextTheme);
 }
 
-const sound = new Audio('../sounds/33335__jaybatzner__clatter1.ogg');
+const sound = new Audio('./sounds/33335__jaybatzner__clatter1.ogg');
 sound.preload = 'auto';
 sound.load();
 let isMuted = true;
@@ -180,6 +180,6 @@ function toggleSound() {
 }
 
 if ("serviceWorker" in navigator) {
-	navigator.serviceWorker.register("./sw.js")
+	navigator.serviceWorker.register("./js/sw.js")
 		.then(() => console.log("Service Worker registered"));
 }
