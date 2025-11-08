@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Can't Stop Dice Generator</title>
- </head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Can't Stop Dice Roller</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#372300">
+</head>
+
 <body onload="globalJS();">
 
-  <h1 id="title" onclick="changeTheme()">Can't Stop Dice</h1>
-  <div id="container" class="container">
-    <div id="output">
-      <script src="js/scripts.js"></script>
-    </div>
+	<h1 id="title">Can't Stop Dice</h1>
+	<div id="container" class="container">
+		<div id="output"></div>
 
-  <!-- button component -->
-    <div class="button-wrap">
-      <button id="button" class="button ripple dark" type="button" onmousedown="globalJS();">
-      <span>Roll again</span>
-      </button>
-    </div>
-  <!-- /end button component -->
+		<div class="button-wrap">
+			<button id="button" class="button dark" type="button" onmousedown="globalJS();">
+				<span>Roll again</span>
+			</button>
+		</div>
 
-  </div>
-  <script language="JavaScript" type="text/javascript" src="js/jquery.js"></script>
-  <script language="JavaScript" type="text/javascript" src="js/button.js"></script>
+	</div>
+
+	<div class="options">
+		<button id="themer" onclick="changeTheme()">Palette</button>
+		<button id="sound" onclick="toggleSound()">Sound</button>
+	</div>
+
+	<script src="js/scripts.js"></script>
 </body>
+
 </html>
